@@ -1,0 +1,48 @@
+
+Starting DINO training !
+submitit ERROR (2024-08-22 19:04:48,629) - Submitted job triggered an exception
+submitit ERROR (2024-08-22 19:04:48,629) - Submitted job triggered an exception
+Traceback (most recent call last):
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/_submit.py", line 11, in <module>
+    submitit_main()
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/submission.py", line 76, in submitit_main
+    process_job(args.folder)
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/submission.py", line 69, in process_job
+    raise error
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/submission.py", line 55, in process_job
+    result = delayed.result()
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/utils.py", line 133, in result
+    self._result = self.function(*self.args, **self.kwargs)
+  File "/home/x_shuji/dino/run_with_submitit.py", line 77, in __call__
+    main_dino.train_dino(self.args)
+  File "/home/x_shuji/dino/main_dino.py", line 290, in train_dino
+    train_stats = train_one_epoch(student, teacher, teacher_without_ddp, dino_loss,
+  File "/home/x_shuji/dino/main_dino.py", line 337, in train_one_epoch
+    student_output = student(images)
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/x_shuji/dino/utils.py", line 620, in forward
+    _out = self.backbone(torch.cat(x[start_idx: end_idx]))
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/x_shuji/dino/vision_transformer.py", line 212, in forward
+    x = blk(x)
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/x_shuji/dino/vision_transformer.py", line 108, in forward
+    y, attn = self.attn(self.norm1(x))
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/x_shuji/dino/vision_transformer.py", line 85, in forward
+    attn = (q @ k.transpose(-2, -1)) * self.scale
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 34.00 MiB (GPU 0; 39.39 GiB total capacity; 37.91 GiB already allocated; 8.31 MiB free; 38.13 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

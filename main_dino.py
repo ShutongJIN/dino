@@ -33,6 +33,9 @@ from torchvision import models as torchvision_models
 import utils
 import vision_transformer as vits
 from vision_transformer import DINOHead
+from hdf5_loader import HDF5Dataset
+import wandb
+
 
 torchvision_archs = sorted(name for name in torchvision_models.__dict__
     if name.islower() and not name.startswith("__")
@@ -87,7 +90,7 @@ def get_args_parser():
     parser.add_argument('--clip_grad', type=float, default=3.0, help="""Maximal parameter
         gradient norm if using gradient clipping. Clipping with norm .3 ~ 1.0 can
         help optimization for larger ViT architectures. 0 for disabling.""")
-    parser.add_argument('--batch_size_per_gpu', default=64, type=int,
+    parser.add_argument('--batch_size_per_gpu', default=128, type=int,
         help='Per-GPU batch-size : number of distinct images loaded on one GPU.')
     parser.add_argument('--epochs', default=100, type=int, help='Number of epochs of training.')
     parser.add_argument('--freeze_last_layer', default=1, type=int, help="""Number of epochs
@@ -126,6 +129,7 @@ def get_args_parser():
     parser.add_argument("--dist_url", default="env://", type=str, help="""url used to set up
         distributed training; see https://pytorch.org/docs/stable/distributed.html""")
     parser.add_argument("--local_rank", default=0, type=int, help="Please ignore and do not set this argument.")
+    parser.add_argument("--max_images", default=1000000, type=int, help="images to load")
     return parser
 
 
@@ -142,7 +146,8 @@ def train_dino(args):
         args.local_crops_scale,
         args.local_crops_number,
     )
-    dataset = datasets.ImageFolder(args.data_path, transform=transform)
+    # dataset = datasets.ImageFolder(args.data_path, transform=transform)
+    dataset = HDF5Dataset(args.data_path, transform=transform, max_images=args.max_images)
     sampler = torch.utils.data.DistributedSampler(dataset, shuffle=True)
     data_loader = torch.utils.data.DataLoader(
         dataset,
@@ -251,6 +256,18 @@ def train_dino(args):
                                                args.epochs, len(data_loader))
     print(f"Loss, optimizer and schedulers ready.")
 
+    if dist.get_rank() == 0:
+        wandb.init(
+            project="dino_pretraining",
+            config={
+                "learning_rate": args.lr,
+                "epochs": args.epochs,
+                "batch_size": args.batch_size_per_gpu,
+            },
+            resume="allow",  # Allows resuming from a checkpoint
+        )    
+
+
     # ============ optionally resume training ... ============
     to_restore = {"epoch": 0}
     utils.restart_from_checkpoint(
@@ -272,7 +289,7 @@ def train_dino(args):
         # ============ training one epoch of DINO ... ============
         train_stats = train_one_epoch(student, teacher, teacher_without_ddp, dino_loss,
             data_loader, optimizer, lr_schedule, wd_schedule, momentum_schedule,
-            epoch, fp16_scaler, args)
+            epoch, fp16_scaler, args, wandb)
 
         # ============ writing logs ... ============
         save_dict = {
@@ -300,10 +317,11 @@ def train_dino(args):
 
 def train_one_epoch(student, teacher, teacher_without_ddp, dino_loss, data_loader,
                     optimizer, lr_schedule, wd_schedule, momentum_schedule,epoch,
-                    fp16_scaler, args):
+                    fp16_scaler, args, wandb):
     metric_logger = utils.MetricLogger(delimiter="  ")
     header = 'Epoch: [{}/{}]'.format(epoch, args.epochs)
-    for it, (images, _) in enumerate(metric_logger.log_every(data_loader, 10, header)):
+    # for it, (images, _) in enumerate(metric_logger.log_every(data_loader, 10, header)):
+    for it, (images) in enumerate(metric_logger.log_every(data_loader, 10, header)):
         # update weight decay and learning rate according to their schedule
         it = len(data_loader) * epoch + it  # global training iteration
         for i, param_group in enumerate(optimizer.param_groups):
@@ -357,6 +375,8 @@ def train_one_epoch(student, teacher, teacher_without_ddp, dino_loss, data_loade
     # gather the stats from all processes
     metric_logger.synchronize_between_processes()
     print("Averaged stats:", metric_logger)
+    if wandb is not None and utils.is_main_process():
+        wandb.log({k: meter.global_avg for k, meter in metric_logger.meters.items()}, step=epoch)
     return {k: meter.global_avg for k, meter in metric_logger.meters.items()}
 
 

@@ -1,0 +1,78 @@
+
+Starting DINO training !
+Epoch: [0/100]  [  0/488]  eta: 15:23:12  loss: 10.786675 (10.786675)  lr: 0.000000 (0.000000)  wd: 0.040000 (0.040000)  time: 113.508347  data: 105.045731  max mem: 21606
+Epoch: [0/100]  [ 10/488]  eta: 1:36:29  loss: 10.957417 (10.946371)  lr: 0.000004 (0.000004)  wd: 0.040000 (0.040000)  time: 12.112629  data: 9.882287  max mem: 21932
+Epoch: [0/100]  [ 20/488]  eta: 0:56:19  loss: 11.042404 (11.031144)  lr: 0.000008 (0.000008)  wd: 0.040000 (0.040000)  time: 1.906190  data: 0.281400  max mem: 21932
+Epoch: [0/100]  [ 30/488]  eta: 0:41:26  loss: 11.170929 (11.085406)  lr: 0.000016 (0.000012)  wd: 0.040000 (0.040000)  time: 1.754427  data: 0.098516  max mem: 21932
+Epoch: [0/100]  [ 40/488]  eta: 0:35:29  loss: 11.214414 (11.117973)  lr: 0.000025 (0.000016)  wd: 0.040000 (0.040000)  time: 2.162359  data: 0.000220  max mem: 21932
+Epoch: [0/100]  [ 50/488]  eta: 0:31:07  loss: 11.215449 (11.136696)  lr: 0.000033 (0.000020)  wd: 0.040001 (0.040000)  time: 2.455714  data: 0.000282  max mem: 21932
+Epoch: [0/100]  [ 60/488]  eta: 0:27:58  loss: 11.210790 (11.148163)  lr: 0.000041 (0.000025)  wd: 0.040001 (0.040000)  time: 2.219639  data: 0.000232  max mem: 21932
+Epoch: [0/100]  [ 70/488]  eta: 0:25:38  loss: 11.200137 (11.154664)  lr: 0.000049 (0.000029)  wd: 0.040001 (0.040001)  time: 2.194637  data: 0.000193  max mem: 21932
+Epoch: [0/100]  [ 80/488]  eta: 0:23:48  loss: 11.186397 (11.158071)  lr: 0.000057 (0.000033)  wd: 0.040002 (0.040001)  time: 2.217746  data: 0.000217  max mem: 21932
+Epoch: [0/100]  [ 90/488]  eta: 0:22:17  loss: 11.176208 (11.159719)  lr: 0.000066 (0.000037)  wd: 0.040002 (0.040001)  time: 2.227963  data: 0.000228  max mem: 21932
+Epoch: [0/100]  [100/488]  eta: 0:20:56  loss: 11.171956 (11.160774)  lr: 0.000074 (0.000041)  wd: 0.040003 (0.040001)  time: 2.169758  data: 0.000244  max mem: 21932
+Epoch: [0/100]  [110/488]  eta: 0:19:47  loss: 11.169448 (11.161526)  lr: 0.000082 (0.000045)  wd: 0.040004 (0.040002)  time: 2.136786  data: 0.000254  max mem: 21932
+Epoch: [0/100]  [120/488]  eta: 0:18:43  loss: 11.168946 (11.162171)  lr: 0.000090 (0.000049)  wd: 0.040005 (0.040002)  time: 2.117246  data: 0.000224  max mem: 21932
+Epoch: [0/100]  [130/488]  eta: 0:17:49  loss: 11.170173 (11.162890)  lr: 0.000098 (0.000053)  wd: 0.040005 (0.040002)  time: 2.140039  data: 0.000186  max mem: 21932
+Epoch: [0/100]  [140/488]  eta: 0:16:56  loss: 11.172768 (11.163670)  lr: 0.000107 (0.000057)  wd: 0.040006 (0.040002)  time: 2.124213  data: 0.000201  max mem: 21932
+Epoch: [0/100]  [150/488]  eta: 0:16:10  loss: 11.175756 (11.164555)  lr: 0.000115 (0.000061)  wd: 0.040007 (0.040003)  time: 2.105382  data: 0.000201  max mem: 21932
+Epoch: [0/100]  [160/488]  eta: 0:15:32  loss: 11.177928 (11.165486)  lr: 0.000123 (0.000066)  wd: 0.040008 (0.040003)  time: 2.302085  data: 0.000173  max mem: 21932
+Epoch: [0/100]  [170/488]  eta: 0:14:50  loss: 11.179685 (11.166381)  lr: 0.000131 (0.000070)  wd: 0.040010 (0.040004)  time: 2.279067  data: 0.000200  max mem: 21932
+Epoch: [0/100]  [180/488]  eta: 0:14:12  loss: 11.181621 (11.167278)  lr: 0.000139 (0.000074)  wd: 0.040011 (0.040004)  time: 2.148720  data: 0.000221  max mem: 21932
+Epoch: [0/100]  [190/488]  eta: 0:13:34  loss: 11.183292 (11.168139)  lr: 0.000148 (0.000078)  wd: 0.040012 (0.040005)  time: 2.160368  data: 0.000254  max mem: 21932
+Epoch: [0/100]  [200/488]  eta: 0:13:00  loss: 11.184507 (11.168999)  lr: 0.000156 (0.000082)  wd: 0.040013 (0.040005)  time: 2.176222  data: 0.000245  max mem: 21932
+Epoch: [0/100]  [210/488]  eta: 0:12:26  loss: 11.185151 (11.169750)  lr: 0.000164 (0.000086)  wd: 0.040015 (0.040005)  time: 2.202636  data: 0.000186  max mem: 21932
+Epoch: [0/100]  [220/488]  eta: 0:11:55  loss: 11.185037 (11.170426)  lr: 0.000172 (0.000090)  wd: 0.040016 (0.040006)  time: 2.264123  data: 0.000206  max mem: 21932
+Epoch: [0/100]  [230/488]  eta: 0:11:16  loss: 11.185041 (11.171079)  lr: 0.000180 (0.000094)  wd: 0.040018 (0.040007)  time: 1.961720  data: 0.000242  max mem: 21932
+Epoch: [0/100]  [240/488]  eta: 0:10:46  loss: 11.184620 (11.171646)  lr: 0.000189 (0.000098)  wd: 0.040020 (0.040007)  time: 1.914764  data: 0.000262  max mem: 21932
+Epoch: [0/100]  [250/488]  eta: 0:10:15  loss: 11.183985 (11.172104)  lr: 0.000197 (0.000102)  wd: 0.040021 (0.040008)  time: 2.201364  data: 0.000229  max mem: 21932
+Epoch: [0/100]  [260/488]  eta: 0:09:46  loss: 11.183431 (11.172534)  lr: 0.000205 (0.000107)  wd: 0.040023 (0.040008)  time: 2.167475  data: 0.000208  max mem: 21932
+Epoch: [0/100]  [270/488]  eta: 0:09:10  loss: 11.182497 (11.172878)  lr: 0.000213 (0.000111)  wd: 0.040025 (0.040009)  time: 1.750107  data: 0.000241  max mem: 21932
+Epoch: [0/100]  [280/488]  eta: 0:08:42  loss: 11.180630 (11.173134)  lr: 0.000221 (0.000115)  wd: 0.040027 (0.040010)  time: 1.748085  data: 0.000286  max mem: 21932
+Epoch: [0/100]  [290/488]  eta: 0:08:16  loss: 11.179738 (11.173355)  lr: 0.000230 (0.000119)  wd: 0.040029 (0.040010)  time: 2.220155  data: 0.000247  max mem: 21932
+Epoch: [0/100]  [300/488]  eta: 0:07:48  loss: 11.178561 (11.173484)  lr: 0.000238 (0.000123)  wd: 0.040031 (0.040011)  time: 2.194744  data: 0.000173  max mem: 21932
+Epoch: [0/100]  [310/488]  eta: 0:07:21  loss: 11.176421 (11.173565)  lr: 0.000246 (0.000127)  wd: 0.040034 (0.040012)  time: 2.120640  data: 0.000182  max mem: 21932
+Epoch: [0/100]  [320/488]  eta: 0:06:54  loss: 11.174634 (11.173583)  lr: 0.000254 (0.000131)  wd: 0.040036 (0.040013)  time: 2.084311  data: 0.000188  max mem: 21932
+Epoch: [0/100]  [330/488]  eta: 0:06:27  loss: 11.173998 (11.173577)  lr: 0.000262 (0.000135)  wd: 0.040038 (0.040014)  time: 2.068652  data: 0.000201  max mem: 21932
+Epoch: [0/100]  [340/488]  eta: 0:06:01  loss: 11.173176 (11.173552)  lr: 0.000271 (0.000139)  wd: 0.040041 (0.040014)  time: 2.068993  data: 0.000208  max mem: 21932
+Epoch: [0/100]  [350/488]  eta: 0:05:35  loss: 11.172661 (11.173512)  lr: 0.000279 (0.000143)  wd: 0.040043 (0.040015)  time: 2.072327  data: 0.000222  max mem: 21932
+Epoch: [0/100]  [360/488]  eta: 0:05:07  loss: 11.171616 (11.173466)  lr: 0.000287 (0.000148)  wd: 0.040046 (0.040016)  time: 1.763791  data: 0.000242  max mem: 21932
+Epoch: [0/100]  [370/488]  eta: 0:04:41  loss: 11.171353 (11.173397)  lr: 0.000295 (0.000152)  wd: 0.040048 (0.040017)  time: 1.549363  data: 0.000214  max mem: 21932
+Epoch: [0/100]  [380/488]  eta: 0:04:15  loss: 11.171378 (11.173357)  lr: 0.000303 (0.000156)  wd: 0.040051 (0.040018)  time: 1.687083  data: 0.000236  max mem: 21932
+Epoch: [0/100]  [390/488]  eta: 0:03:51  loss: 11.171921 (11.173337)  lr: 0.000312 (0.000160)  wd: 0.040054 (0.040019)  time: 1.821859  data: 0.000231  max mem: 21932
+Epoch: [0/100]  [400/488]  eta: 0:03:26  loss: 11.172568 (11.173349)  lr: 0.000320 (0.000164)  wd: 0.040057 (0.040020)  time: 1.835950  data: 0.000231  max mem: 21932
+Epoch: [0/100]  [410/488]  eta: 0:03:02  loss: 11.174451 (11.173400)  lr: 0.000328 (0.000168)  wd: 0.040060 (0.040021)  time: 1.935538  data: 0.000232  max mem: 21932
+Epoch: [0/100]  [420/488]  eta: 0:02:38  loss: 11.176479 (11.173486)  lr: 0.000336 (0.000172)  wd: 0.040063 (0.040022)  time: 2.063146  data: 0.000198  max mem: 21932
+Epoch: [0/100]  [430/488]  eta: 0:02:14  loss: 11.177921 (11.173608)  lr: 0.000344 (0.000176)  wd: 0.040066 (0.040023)  time: 2.079899  data: 0.000200  max mem: 21932
+Epoch: [0/100]  [440/488]  eta: 0:01:51  loss: 11.179283 (11.173753)  lr: 0.000353 (0.000180)  wd: 0.040069 (0.040024)  time: 2.102480  data: 0.000187  max mem: 21932
+Epoch: [0/100]  [450/488]  eta: 0:01:27  loss: 11.181239 (11.173932)  lr: 0.000361 (0.000184)  wd: 0.040072 (0.040025)  time: 2.093780  data: 0.000180  max mem: 21932
+Epoch: [0/100]  [460/488]  eta: 0:01:04  loss: 11.181912 (11.174129)  lr: 0.000369 (0.000189)  wd: 0.040076 (0.040026)  time: 2.069022  data: 0.000187  max mem: 21932
+Epoch: [0/100]  [470/488]  eta: 0:00:41  loss: 11.183844 (11.174343)  lr: 0.000377 (0.000193)  wd: 0.040079 (0.040027)  time: 2.055826  data: 0.001358  max mem: 21932
+Epoch: [0/100]  [480/488]  eta: 0:00:18  loss: 11.184487 (11.174560)  lr: 0.000385 (0.000197)  wd: 0.040082 (0.040029)  time: 2.122596  data: 0.001293  max mem: 21932
+Epoch: [0/100]  [487/488]  eta: 0:00:02  loss: 11.184651 (11.174705)  lr: 0.000391 (0.000200)  wd: 0.040085 (0.040030)  time: 1.639269  data: 0.001251  max mem: 21932
+Epoch: [0/100] Total time: 0:18:36 (2.288447 s / it)
+Averaged stats: loss: 11.184651 (11.174701)  lr: 0.000391 (0.000200)  wd: 0.040085 (0.040030)
+submitit ERROR (2024-08-23 11:37:14,291) - Submitted job triggered an exception
+submitit ERROR (2024-08-23 11:37:14,291) - Submitted job triggered an exception
+Traceback (most recent call last):
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/_submit.py", line 11, in <module>
+    submitit_main()
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/submission.py", line 76, in submitit_main
+    process_job(args.folder)
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/submission.py", line 69, in process_job
+    raise error
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/submission.py", line 55, in process_job
+    result = delayed.result()
+  File "/home/x_shuji/.conda/envs/data4robotics/lib/python3.9/site-packages/submitit/core/utils.py", line 133, in result
+    self._result = self.function(*self.args, **self.kwargs)
+  File "/home/x_shuji/dino/run_with_submitit.py", line 77, in __call__
+    main_dino.train_dino(self.args)
+  File "/home/x_shuji/dino/main_dino.py", line 290, in train_dino
+    train_stats = train_one_epoch(student, teacher, teacher_without_ddp, dino_loss,
+  File "/home/x_shuji/dino/main_dino.py", line 379, in train_one_epoch
+    wandb.log({k: meter.global_avg for k, meter in metric_logger.meters.items()}, step=global_step)
+NameError: name 'global_step' is not defined

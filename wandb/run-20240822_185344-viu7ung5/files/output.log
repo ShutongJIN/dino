@@ -1,0 +1,6 @@
+
+Starting DINO training !
+Epoch: [0/100]  [   0/3906]  eta: 10 days, 2:44:22  loss: 10.788828 (10.788828)  lr: 0.000000 (0.000000)  wd: 0.040000 (0.040000)  time: 223.723160  data: 188.516159  max mem: 21606
+submitit WARNING (2024-08-22 18:58:17,923) - Bypassing signal SIGCONT
+submitit WARNING (2024-08-22 18:58:17,929) - Bypassing signal SIGTERM
+submitit WARNING (2024-08-22 18:58:17,923) - Bypassing signal SIGCONT

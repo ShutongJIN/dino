@@ -30,17 +30,25 @@ def parse_args():
     parser.add_argument("--nodes", default=2, type=int, help="Number of nodes to request")
     parser.add_argument("--timeout", default=2800, type=int, help="Duration of the job")
 
-    parser.add_argument("--partition", default="learnfair", type=str, help="Partition where to submit")
+    parser.add_argument("--partition", default="berzelius", type=str, help="Partition where to submit")
     parser.add_argument("--use_volta32", action='store_true', help="Big models? Use this")
+    parser.add_argument("--use_a100", action='store_true', help="Big models? Use this")
     parser.add_argument('--comment', default="", type=str,
                         help='Comment to pass to scheduler, e.g. priority message')
     return parser.parse_args()
 
 
+# def get_shared_folder() -> Path:
+#     user = os.getenv("USER")
+#     if Path("/checkpoint/").is_dir():
+#         p = Path(f"/checkpoint/{user}/experiments")
+#         p.mkdir(exist_ok=True)
+#         return p
+#     raise RuntimeError("No shared folder available")
+
 def get_shared_folder() -> Path:
-    user = os.getenv("USER")
-    if Path("/checkpoint/").is_dir():
-        p = Path(f"/checkpoint/{user}/experiments")
+    if Path("/proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/pre_trained_weights").is_dir():
+        p = Path(f"/proj/cloudrobotics-nest/users/Stacking/dataset/CloudGripper_push_1k/dino")
         p.mkdir(exist_ok=True)
         return p
     raise RuntimeError("No shared folder available")
@@ -61,6 +69,9 @@ class Trainer(object):
 
     def __call__(self):
         import main_dino
+
+        os.system("module load Anaconda/2021.05-nsc1")
+        os.system("conda activate data4robotics")  
 
         self._setup_gpu_args()
         main_dino.train_dino(self.args)
@@ -101,6 +112,8 @@ def main():
     kwargs = {}
     if args.use_volta32:
         kwargs['slurm_constraint'] = 'volta32gb'
+    if args.use_a100:
+        kwargs['slurm_constraint'] = 'a100'
     if args.comment:
         kwargs['slurm_comment'] = args.comment
 

@@ -1,0 +1,332 @@
+2024-08-23 11:18:31,656 INFO    StreamThr :2427564 [internal.py:wandb_internal():88] W&B internal server running at pid: 2427564, started at: 2024-08-23 11:18:31.653476
+2024-08-23 11:18:31,658 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: status
+2024-08-23 11:18:31,661 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: status
+2024-08-23 11:18:31,661 DEBUG   SenderThread:2427564 [sender.py:send():303] send: header
+2024-08-23 11:18:31,662 INFO    WriterThread:2427564 [datastore.py:open_for_write():75] open: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/run-k2jjuhut.wandb
+2024-08-23 11:18:31,710 DEBUG   SenderThread:2427564 [sender.py:send():303] send: run
+2024-08-23 11:18:31,713 INFO    SenderThread:2427564 [sender.py:_maybe_setup_resume():593] checking resume status for None/dino_pretraining/k2jjuhut
+2024-08-23 11:18:32,358 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: check_version
+2024-08-23 11:18:32,360 INFO    SenderThread:2427564 [dir_watcher.py:__init__():216] watching files in: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files
+2024-08-23 11:18:32,360 INFO    SenderThread:2427564 [sender.py:_start_run_threads():928] run started: k2jjuhut with start time 1724404711.649711
+2024-08-23 11:18:32,361 DEBUG   SenderThread:2427564 [sender.py:send():303] send: summary
+2024-08-23 11:18:32,362 INFO    SenderThread:2427564 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2024-08-23 11:18:32,362 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: check_version
+2024-08-23 11:18:32,439 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: run_start
+2024-08-23 11:18:32,474 DEBUG   HandlerThread:2427564 [meta.py:__init__():34] meta init
+2024-08-23 11:18:32,474 DEBUG   HandlerThread:2427564 [meta.py:__init__():49] meta init done
+2024-08-23 11:18:32,474 DEBUG   HandlerThread:2427564 [meta.py:probe():215] probe
+2024-08-23 11:18:32,488 DEBUG   HandlerThread:2427564 [meta.py:_setup_git():205] setup git
+2024-08-23 11:18:32,511 DEBUG   HandlerThread:2427564 [meta.py:_setup_git():212] setup git done
+2024-08-23 11:18:32,512 DEBUG   HandlerThread:2427564 [meta.py:_save_pip():53] save pip
+2024-08-23 11:18:32,513 DEBUG   HandlerThread:2427564 [meta.py:_save_pip():67] save pip done
+2024-08-23 11:18:32,513 DEBUG   HandlerThread:2427564 [meta.py:_save_conda():74] save conda
+2024-08-23 11:18:33,363 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/requirements.txt
+2024-08-23 11:18:33,363 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/conda-environment.yaml
+2024-08-23 11:18:33,363 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/wandb-summary.json
+2024-08-23 11:18:42,838 DEBUG   HandlerThread:2427564 [meta.py:_save_conda():84] save conda done
+2024-08-23 11:18:42,838 DEBUG   HandlerThread:2427564 [meta.py:probe():253] probe done
+2024-08-23 11:18:43,371 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/conda-environment.yaml
+2024-08-23 11:18:43,371 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/wandb-metadata.json
+2024-08-23 11:18:43,642 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:18:43,642 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:18:43,828 DEBUG   SenderThread:2427564 [sender.py:send():303] send: telemetry
+2024-08-23 11:18:43,830 DEBUG   SenderThread:2427564 [sender.py:send():303] send: files
+2024-08-23 11:18:43,830 INFO    SenderThread:2427564 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2024-08-23 11:18:44,372 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_created():275] file/dir created: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:18:44,431 INFO    Thread-16 :2427564 [upload_job.py:push():143] Uploaded file /tmp/tmpow6vuprlwandb/4bry5ddx-wandb-metadata.json
+2024-08-23 11:18:46,374 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:18:57,405 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:18:57,405 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:19:03,389 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/config.yaml
+2024-08-23 11:19:09,150 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:19:12,613 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:19:12,613 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:19:27,791 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:19:27,791 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:19:42,987 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:19:42,988 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:19:47,610 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:19:58,214 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:19:58,214 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:20:18,214 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:20:18,215 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:20:26,269 WARNING FileStreamThread:2427564 [file_stream.py:request_with_retry():667] requests_with_retry encountered retryable exception: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/files/shutong-jin1999/dino_pretraining/k2jjuhut/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x14b075102520>>, args: ('https://api.wandb.ai/files/shutong-jin1999/dino_pretraining/k2jjuhut/file_stream',), kwargs: {'json': {'complete': False, 'failed': False, 'dropped': 0, 'uploaded': []}}
+2024-08-23 11:20:26,860 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:20:32,470 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:20:33,519 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:20:33,519 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:20:50,411 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:20:50,412 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:20:52,491 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:21:08,520 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:21:08,823 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:21:08,824 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:21:10,515 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:21:25,516 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:21:25,516 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:21:28,549 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:21:50,184 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:21:52,078 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:21:52,078 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:21:54,582 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:22:14,649 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:22:14,649 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:22:16,637 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:22:32,507 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:22:36,483 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:22:36,483 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:22:38,712 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:22:58,542 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:22:58,542 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:23:00,803 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:23:16,271 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:23:20,829 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:23:20,829 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:23:22,825 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:23:43,103 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:23:43,103 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:23:44,847 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:23:58,630 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:24:04,212 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:24:04,212 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:24:06,899 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:24:25,840 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:24:25,841 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:24:26,925 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:24:41,393 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:24:46,574 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:24:46,574 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:24:48,958 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:25:08,646 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:25:08,646 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:25:10,996 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:25:25,509 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:25:29,073 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:25:29,073 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:25:31,017 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:25:50,755 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:25:50,755 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:25:53,040 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:26:07,721 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:26:15,111 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:26:15,112 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:26:17,075 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:26:36,324 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:26:36,325 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:26:39,137 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:26:50,385 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:26:58,091 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:26:58,092 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:26:59,163 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:27:19,550 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:27:19,551 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:27:21,194 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:27:35,144 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:27:41,610 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:27:41,611 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:27:43,215 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:28:03,604 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:28:03,605 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:28:05,243 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:28:16,710 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:28:26,902 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:28:26,902 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:28:29,265 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:28:42,842 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:28:42,842 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:28:45,285 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:28:58,636 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:29:05,104 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:29:05,105 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:29:07,308 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:29:26,873 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:29:26,873 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:29:29,330 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:29:41,526 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:29:48,553 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:29:48,553 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:29:51,383 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:30:03,395 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:30:03,786 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:30:03,787 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:30:23,519 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:30:23,519 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:30:24,494 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:30:25,459 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:30:46,285 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:30:46,286 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:30:47,480 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:31:06,986 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:31:07,414 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:31:07,415 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:31:09,528 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:31:28,699 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:31:28,699 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:31:31,550 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:31:48,939 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:31:49,108 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:31:49,108 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:31:51,592 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:32:10,077 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:32:10,078 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:32:11,612 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:32:30,485 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:32:30,486 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:32:31,642 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:32:31,909 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:32:51,521 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:32:51,521 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:32:53,679 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:33:07,696 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:33:11,495 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:33:11,495 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:33:14,238 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:33:23,730 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:33:30,473 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:33:30,474 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:33:41,747 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:33:52,416 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:33:52,417 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:33:57,183 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:34:01,767 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:34:12,725 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:34:12,725 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:34:17,792 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:34:34,123 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:34:34,123 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:34:39,845 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:34:40,306 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:34:53,810 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:34:53,811 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:34:59,866 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:35:15,878 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:35:15,878 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:35:21,942 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:35:23,549 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:35:36,156 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:35:36,156 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:35:41,976 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:35:56,981 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:35:56,982 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:36:03,998 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:36:07,636 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:36:17,560 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:36:17,561 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:36:24,020 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:36:38,607 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:36:38,607 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:36:43,069 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:36:49,472 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:37:00,047 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: stop_status
+2024-08-23 11:37:00,047 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: stop_status
+2024-08-23 11:37:06,090 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:37:14,296 DEBUG   SenderThread:2427564 [sender.py:send():303] send: exit
+2024-08-23 11:37:14,296 INFO    SenderThread:2427564 [sender.py:send_exit():442] handling exit code: 1
+2024-08-23 11:37:14,296 INFO    SenderThread:2427564 [sender.py:send_exit():444] handling runtime: 1121
+2024-08-23 11:37:14,298 INFO    SenderThread:2427564 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2024-08-23 11:37:14,298 INFO    SenderThread:2427564 [sender.py:send_exit():450] send defer
+2024-08-23 11:37:14,298 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:14,299 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 0
+2024-08-23 11:37:14,299 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:14,299 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 0
+2024-08-23 11:37:14,299 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 1
+2024-08-23 11:37:14,299 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:14,299 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 1
+2024-08-23 11:37:14,929 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:14,929 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 1
+2024-08-23 11:37:14,929 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 2
+2024-08-23 11:37:14,929 DEBUG   SenderThread:2427564 [sender.py:send():303] send: stats
+2024-08-23 11:37:14,929 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:14,930 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 2
+2024-08-23 11:37:14,930 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:14,930 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 2
+2024-08-23 11:37:14,930 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 3
+2024-08-23 11:37:14,930 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:14,930 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 3
+2024-08-23 11:37:14,930 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:14,930 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 3
+2024-08-23 11:37:14,930 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 4
+2024-08-23 11:37:14,930 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:14,930 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 4
+2024-08-23 11:37:14,930 DEBUG   SenderThread:2427564 [sender.py:send():303] send: summary
+2024-08-23 11:37:14,931 INFO    SenderThread:2427564 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2024-08-23 11:37:14,931 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:14,931 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 4
+2024-08-23 11:37:14,931 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 5
+2024-08-23 11:37:14,932 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:14,932 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 5
+2024-08-23 11:37:14,932 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:14,932 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 5
+2024-08-23 11:37:14,932 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 6
+2024-08-23 11:37:14,932 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:14,932 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 6
+2024-08-23 11:37:14,932 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:14,932 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 6
+2024-08-23 11:37:15,098 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/wandb-summary.json
+2024-08-23 11:37:15,296 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: poll_exit
+2024-08-23 11:37:16,099 INFO    Thread-12 :2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:37:16,299 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 7
+2024-08-23 11:37:16,299 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: poll_exit
+2024-08-23 11:37:16,299 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:16,299 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 7
+2024-08-23 11:37:16,299 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:16,299 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 7
+2024-08-23 11:37:16,299 INFO    SenderThread:2427564 [dir_watcher.py:finish():362] shutting down directory watcher
+2024-08-23 11:37:17,100 INFO    SenderThread:2427564 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:37:17,100 INFO    SenderThread:2427564 [dir_watcher.py:finish():392] scan: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files
+2024-08-23 11:37:17,100 INFO    SenderThread:2427564 [dir_watcher.py:finish():406] scan save: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log output.log
+2024-08-23 11:37:17,101 INFO    SenderThread:2427564 [dir_watcher.py:finish():406] scan save: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/config.yaml config.yaml
+2024-08-23 11:37:17,101 INFO    SenderThread:2427564 [dir_watcher.py:finish():406] scan save: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/requirements.txt requirements.txt
+2024-08-23 11:37:17,107 INFO    SenderThread:2427564 [dir_watcher.py:finish():406] scan save: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/wandb-summary.json wandb-summary.json
+2024-08-23 11:37:17,110 INFO    SenderThread:2427564 [dir_watcher.py:finish():406] scan save: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/conda-environment.yaml conda-environment.yaml
+2024-08-23 11:37:17,112 INFO    SenderThread:2427564 [dir_watcher.py:finish():406] scan save: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/wandb-metadata.json wandb-metadata.json
+2024-08-23 11:37:17,112 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 8
+2024-08-23 11:37:17,115 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:17,115 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 8
+2024-08-23 11:37:17,116 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:17,116 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 8
+2024-08-23 11:37:17,116 INFO    SenderThread:2427564 [file_pusher.py:finish():168] shutting down file pusher
+2024-08-23 11:37:17,601 INFO    Thread-20 :2427564 [upload_job.py:push():143] Uploaded file /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/wandb-summary.json
+2024-08-23 11:37:17,601 INFO    Thread-21 :2427564 [upload_job.py:push():143] Uploaded file /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/conda-environment.yaml
+2024-08-23 11:37:17,633 INFO    Thread-19 :2427564 [upload_job.py:push():143] Uploaded file /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/requirements.txt
+2024-08-23 11:37:17,644 INFO    Thread-18 :2427564 [upload_job.py:push():143] Uploaded file /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/config.yaml
+2024-08-23 11:37:17,673 INFO    Thread-17 :2427564 [upload_job.py:push():143] Uploaded file /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/files/output.log
+2024-08-23 11:37:17,873 INFO    Thread-11 :2427564 [sender.py:transition_state():463] send defer: 9
+2024-08-23 11:37:17,873 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:17,873 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 9
+2024-08-23 11:37:17,874 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:17,874 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 9
+2024-08-23 11:37:17,874 INFO    SenderThread:2427564 [file_pusher.py:join():173] waiting for file pusher
+2024-08-23 11:37:17,874 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 10
+2024-08-23 11:37:17,874 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:17,874 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 10
+2024-08-23 11:37:17,874 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:17,874 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 10
+2024-08-23 11:37:18,442 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 11
+2024-08-23 11:37:18,443 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:18,443 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 11
+2024-08-23 11:37:18,443 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:18,443 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 11
+2024-08-23 11:37:18,443 INFO    SenderThread:2427564 [sender.py:transition_state():463] send defer: 12
+2024-08-23 11:37:18,443 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: defer
+2024-08-23 11:37:18,443 DEBUG   SenderThread:2427564 [sender.py:send():303] send: final
+2024-08-23 11:37:18,443 INFO    HandlerThread:2427564 [handler.py:handle_request_defer():161] handle defer: 12
+2024-08-23 11:37:18,444 DEBUG   SenderThread:2427564 [sender.py:send():303] send: footer
+2024-08-23 11:37:18,444 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: defer
+2024-08-23 11:37:18,444 INFO    SenderThread:2427564 [sender.py:send_request_defer():459] handle sender defer: 12
+2024-08-23 11:37:18,444 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: poll_exit
+2024-08-23 11:37:18,444 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: poll_exit
+2024-08-23 11:37:18,445 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: server_info
+2024-08-23 11:37:18,445 DEBUG   SenderThread:2427564 [sender.py:send_request():317] send_request: server_info
+2024-08-23 11:37:18,447 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: get_summary
+2024-08-23 11:37:18,447 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: sampled_history
+2024-08-23 11:37:18,760 INFO    MainThread:2427564 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2024-08-23 11:37:18,760 INFO    MainThread:2427564 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2024-08-23 11:37:18,760 INFO    MainThread:2427564 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2024-08-23 11:37:18,760 DEBUG   HandlerThread:2427564 [handler.py:handle_request():138] handle_request: shutdown
+2024-08-23 11:37:18,760 INFO    HandlerThread:2427564 [handler.py:finish():814] shutting down handler
+2024-08-23 11:37:19,444 INFO    WriterThread:2427564 [datastore.py:close():279] close: /home/x_shuji/dino/wandb/run-20240823_111831-k2jjuhut/run-k2jjuhut.wandb
+2024-08-23 11:37:19,759 INFO    SenderThread:2427564 [sender.py:finish():1331] shutting down sender
+2024-08-23 11:37:19,759 INFO    SenderThread:2427564 [file_pusher.py:finish():168] shutting down file pusher
+2024-08-23 11:37:19,760 INFO    SenderThread:2427564 [file_pusher.py:join():173] waiting for file pusher
+2024-08-23 11:37:19,762 INFO    MainThread:2427564 [internal.py:handle_exit():78] Internal process exited
